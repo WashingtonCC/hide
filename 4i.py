@@ -55,4 +55,6 @@ for i in range(width):
             new_pixel.append(b)
         pixel_map[i, j] = tuple(new_pixel)
 
-input_image.save('hide.png', 'png')
+output_name = input("Output image name: ")
+
+input_image.save(f"{output_name}.png", 'png')
